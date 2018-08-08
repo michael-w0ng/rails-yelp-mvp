@@ -22,17 +22,15 @@ class RestaurantsController < ApplicationController
   end
 
   def update
-    # @restaurant = restaurant.find(params[:id])
     @restaurant.update(restaurant_params)
     redirect_to restaurants_path
   end
 
   def edit
-    # @restaurant = restaurant.find(params[:id])
+   
   end
 
   def destroy
-    # @restaurant = restaurant.find(params[:id])
     @restaurant.destroy
     redirect_to restaurants_path
   end
